@@ -1,0 +1,118 @@
+#app-container {
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+#searchArea {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin: 24px 0 32px 0;
+    flex-wrap: wrap;
+}
+#searchArea input {
+    flex: 1;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 15px;
+    padding: 12px 16px;
+    color: var(--text-main);
+    box-shadow: var(--shadow-md);
+    outline: none;
+    transition: var(--transition-smooth);
+}
+#searchArea input:focus {
+    border-color: var(--brightness);
+}
+#searchArea button {
+    background: var(--primary-gradient);
+    border: none;
+    padding: 14px 28px;
+    border-radius: var(--radius-md);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+#searchArea button:hover {
+    transform: scale(1.02);
+}
+#searchArea button:active {
+    transform: scale(0.98);
+}
+.error-text {
+    color: #cf222e;
+    background-color: #ffebe9;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(207, 34, 46, 0.2);
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 24px 0;
+}
+.loading-text {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 8px;
+}
+.result-card {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    padding: 32px;
+}
+.result-card h2 {
+    margin: 0 0 16px 0;
+    font-size: 1.8rem;
+    color: var(--text-main);
+    text-transform: capitalize;
+}
+.result-card p {
+    margin: 0 0 12px 0;
+    font-size: 15px;
+    color: var(--text-main);
+    line-height: 1.5rem;
+    border-bottom: 1px dashed #e1e4e8;
+    padding-bottom: 12px;
+}
+.examples-container {
+    padding-top: 16px;
+}
+.examples-container h3 {
+    font-size: 14px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.examples-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.examples-container li {
+    display: block;
+    font-size: 14px;
+    font-style: italic; 
+    color: var(--text-main);
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 14px;
+}
+.examples-container li::before {
+    content: "•";
+    color: var(--brightness);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
